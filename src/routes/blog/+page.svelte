@@ -25,20 +25,31 @@
     margin: 50px auto;
     max-width: 800px;
     padding: 0 20px;
+    background-color: #9265e6; /* Добавлено для более яркого фона */
+    border-radius: 10px; /* Добавлено для закругления углов */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Улучшен тень блока */
 }
 
 .blogposts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивные колонки */
     gap: 20px;
 }
 
 .post {
     border: 1px solid #ddd;
     padding: 10px;
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Улучшенная тень для постов */
+    border-radius: 5px; /* Добавлено для закругления углов */
 }
+
 .link {
     color: rgb(10, 10, 139);
+    text-decoration: none; /* Убрано подчеркивание у ссылок */
+    font-weight: bold; /* Жирный шрифт для ссылок */
+}
+
+.link:hover {
+    color: rgb(10, 10, 200); /* Изменение цвета при наведении */
 }
 </style>
