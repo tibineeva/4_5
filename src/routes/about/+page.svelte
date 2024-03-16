@@ -1,31 +1,18 @@
-<!-- +page.svelte -->
 <script>
-    let pageTitle = "Обо мне";
-    let pageContent = 
-        <p>Привет! Меня зовут [Ваше имя] и я рад приветствовать вас на моей странице.</p>
-        <p>Я увлекаюсь [Ваше хобби] и люблю проводить время [Ваши интересы].</p>
-        <p>На этой странице вы найдете немного информации обо мне и моих увлечениях. Приятного чтения!</p>
-    ;
+    let aboutMeText = "Привет! Я Анастасия. Я страстный программист и люблю изучать новые технологии. В свободное время я занимаюсь спортом и читаю книги."
 </script>
 
-<h1>{pageTitle}</h1>
-
-<div class="about-me">
-    {@html pageContent}
-</div>
+<section class="about-me">
+    <h1>Обо мне</h1>
+    <p>{aboutMeText}</p>
+</section>
 
 <style>
-
-.about-me {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.about-me p {
-    margin-bottom: 10px;
-}
-
+    .about-me {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
 </style>
