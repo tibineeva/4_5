@@ -2,9 +2,9 @@
     <div class="nav-container"> 
         <a href="/" class="nav-logo" title="Back to Homepage">Имя Фамилия</a> 
         <div class="nav-links"> 
-            {#each nav as link}
-            <a href={link.href} class="link">{link.title}</a>
-            {/each}
+            {#each nav as link} 
+            <a href={link.href} class="link">{link.title}</a> 
+            {/each} 
         </div> 
     </div> 
 </nav> 
@@ -12,7 +12,7 @@
     <!-- Pages will be injected below --> 
     <slot /> 
 </div> 
-<script> 
+<script>
     const nav = [ 
     { 
         title: 'Обо мне', 
@@ -29,11 +29,7 @@
     { 
         title: 'Контакты', 
         href: '/contacts' 
-    }, 
-    { 
-        title: 'temp', 
-        href: '/temp',
-    } 
+    }
     ] 
 </script> 
   
